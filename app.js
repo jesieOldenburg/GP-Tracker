@@ -1,7 +1,8 @@
 const express = require('express')
 const app = express()
-const port = 3000
 const path = require('path')
+const dotenv = require('dotenv').config()
+const PORT = process.env.PORT
 
 app.get('/', (req, res) => res.sendFile(path.join(__dirname + '/index.html')))
 
@@ -9,4 +10,4 @@ app.get('/', (req, res) => {
   res.send('GET request to the homepage')
 })
 
-app.listen(port, () => console.log(`Example app listening on port ${port}!`))
+app.listen(PORT, () => console.log(`app listening on PORT ${PORT}!`))
