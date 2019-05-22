@@ -1,0 +1,31 @@
+{
+    "name": "gp-tracker",
+    "version": "0.0.1",
+    "description": "A statistics tracking app for the current Formula One season",
+    "main": "index.js",
+    "scripts": {
+        "test": "jest",
+        "start": "node app.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/jesieOldenburg/GP-Tracker.git"
+    },
+    "author": "Jesie Oldenburg",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/jesieOldenburg/GP-Tracker/issues"
+    },
+    "homepage": "https://github.com/jesieOldenburg/GP-Tracker#readme",
+    "dependencies": {
+        "dotenv": "^8.0.0",
+        "express": "^4.16.4",
+        "express-handlebars": "^3.1.0",
+        "handlebars": "^4.1.2",
+        "jest": "^24.5.0",
+        "materialize-css": "^1.0.0-rc.2",
+        "mysql": "^2.16.0",
+        "passport": "^0.4.0",
+        "sass": "^1.17.3"
+    }
+}
