@@ -1,0 +1,14 @@
+{
+    "users": [{
+        "id": "",
+        "name": "",
+        "email": ""
+    }],
+    "teams": [{
+        "name": "",
+        "team_pres": "",
+        "drivers": [{
+            "driver_id": ""
+        }]
+    }]
+}
