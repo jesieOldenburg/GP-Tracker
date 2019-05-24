@@ -1,7 +1,8 @@
 const fs = require('fs');
 
 module.exports = (app) => {
-    fs.readdirSync(`controllers/external_api/`).forEach((file) => {
-        require(`./external_api/${file.substr(0, file.indexOf('.'))}`);
+    fs.readdirSync(__dirname).forEach((file) => {
+        // console.log("file", file)
+        require(`./${file.substr(0, file.indexOf('.'))}`);
     })
 }
