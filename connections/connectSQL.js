@@ -1,4 +1,4 @@
-const mysql = require('mysql');
+const mysql = require('mysql2');
 require('dotenv');
 
 let sqlHost = process.env.SQL_HOST,
@@ -9,7 +9,7 @@ const connection = mysql.createConnection({
     host: sqlHost,
     user: sqlUser,
     password: sqlPass,
-    database: 'my_db'
+    database: 'gp_test'
 });
 
 connection.connect();
