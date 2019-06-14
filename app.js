@@ -6,9 +6,9 @@ const cors = require('cors');
 const dotenv = require('dotenv').config();
 const PORT = process.env.PORT;
 require('./controllers/viewRoutes')(app);
-require('./controllers/sr_apiCalls')(app);
-require('./externalAPI_Logic/GET_seasons');
-require('./externalAPI_Logic/dataFormatter');
+// require('./controllers/sr_apiCalls')(app);
+// require('./externalAPI_Logic/GET_seasons');
+// require('./externalAPI_Logic/dataFormatter');
 
 app.engine('handlebars', exphbs());
 app.set('view engine', 'handlebars');
