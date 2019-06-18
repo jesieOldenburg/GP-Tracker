@@ -5,7 +5,6 @@ let formatData = require('./formatExtData');
 // var express = require('express');
 // var router = express.Router();
 
-
 module.exports = function(app) {
 
     app.get('/', (req, res) => { // On page load, get the 'root' route for the app's API...
@@ -20,15 +19,14 @@ module.exports = function(app) {
         axios.get(URL)
             .then(res => {
                 var masterData = res.data;
-                console.log('SUCESS', masterData.stages);
+                console.log('SUCESS');
                 return formatData(masterData);
             })
             .then((dataArray) => {
-                console.log('dataArray IN AXIOS ===>>', dataArray);
+                console.log('dataArray IN AXIOS ===>>', dataArray[0]);
+                res.render('landing', { dataArray }); // res.render('landing', {EXAMPLE OBJ VALS HERE})
             })
             .catch(err => { console.error("FAILED GET REQ", err); });
-        // console.log('COMP HERE?? ==>>', COMP);
-        res.render('landing'); // res.render('landing', {EXAMPLE OBJ VALS HERE})
 
     });
 }

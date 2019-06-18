@@ -37,10 +37,29 @@
         </div>
     </div>
      
-    <div id="driver-cards" class="row">
-        <h3>{{COMP.name}}</h3>
-    </div>
-
+    <div class="row card-row">
+        {{#each dataArray}}
+        <div class="col ">
+            <div class="card">
+                <div class="card-image">
+                <img src="">
+                <h3 class="card-title">{{name}}</h3>
+                </div>
+                <div class="card-content">
+                    <p>
+                        {{team}}
+                    </p>
+                    <p>
+                        {{cnt}}
+                    </p>
+                </div>
+                <div class="card-action">
+                    <a href="#">This is a link</a>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+  </div>
 
 {{!-- </body> --}}
 
