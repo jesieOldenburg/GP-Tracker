@@ -1,13 +1,18 @@
 .card-row {
-    margin: 50px;
+    margin: auto;
 }
 
-.card-title {
-    color: red;
+.col.card-col {
+    margin: auto;
 }
 
 .card {
+    width: 10em;
     margin: 3em;
-    border: 1px solid aliceblue;
-    background-color: aqua;
+    border: 1px solid red;
+    padding: 5px;
+}
+
+.card-img-top {
+    border-radius: 100px;
 }
