@@ -1,9 +1,11 @@
 class Competitor {
-    constructor(id, name, cnt, team) {
+    constructor(id, name, cnt, team, points, position) {
         this.id = id;
         this.name = name;
         this.cnt = cnt;
         this.team = team;
+        this.points = points;
+        this.position = position;
     }
 }
 class SeasonResults {
