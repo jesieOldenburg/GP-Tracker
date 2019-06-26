@@ -1,0 +1,22 @@
+<div class="row card-row">
+	{{#each dataArray}}
+	<div class="col card-col">
+		<div class="card">
+			<img class="card-img-top" src="img/kimi.jpg" alt="Card image cap">
+			<div class="card-body">
+			<h5 class="card-title">
+				{{name}}
+			</h5>
+			<p class="card-text">
+				{{team}}
+			</p>
+			<p class="card-text">
+				<small class="text-muted">
+					{{cnt}}
+				</small>
+			</p>
+			</div>
+		</div>
+	</div>
+	{{/each}}
+</div>
