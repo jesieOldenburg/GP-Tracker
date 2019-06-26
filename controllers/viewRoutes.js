@@ -13,15 +13,30 @@ module.exports = function(app) {
         const F1_API_KEY = process.env.SPT_RADAR_API_KEY; // Get the API key for the SportsRadar Service..
         const URL = `https://api.sportradar.us/formula1/trial/v2/en/sport_events/sr:stage:426678/summary.json?api_key=${F1_API_KEY}`; // Construct the URL and pass in the API key...
 
+        // axios.get(URL) // Call the API...
+        //     .then(res => {
+        //         var masterData = res.data;
+        //         return formatData(masterData);
+        //     })
+        //     .then((dataArray) => {
+        //         res.render('landing', { dataArray });
+        //     })
+        //     .catch(err => { console.error("FAILED GET REQ", err) });
+        // getData();
+    });
+
+    app.get('/drivers', (req, res) => {
+        const F1_API_KEY = process.env.SPT_RADAR_API_KEY; // Get the API key for the SportsRadar Service..
+        const URL = `https://api.sportradar.us/formula1/trial/v2/en/sport_events/sr:stage:426678/summary.json?api_key=${F1_API_KEY}`;
         axios.get(URL) // Call the API...
             .then(res => {
                 var masterData = res.data;
                 return formatData(masterData);
             })
             .then((dataArray) => {
-                res.render('landing', { dataArray });
+                res.render('drivers', { dataArray });
             })
             .catch(err => { console.error("FAILED GET REQ", err) });
-        // getData();
+        // res.render('drivers');
     });
 }
