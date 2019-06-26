@@ -1,7 +1,13 @@
 console.log('events.js is here');
 
-let testBTN = document.getElementById('test-btn');
-console.log('testBTN', testBTN);
-testBTN.addEventListener('click', () => {
-    console.log('clicked the button');
+let emailInput = document.getElementById('login-email-input');
+emailInput.addEventListener('keyup', (e) => {
+    fieldVal = e.target.value;
+    console.log("TCL: fieldVal", fieldVal)
+})
+
+let passwordInput = document.getElementById('login-password-input');
+passwordInput.addEventListener('keyup', (e) => {
+    userPass = e.target.value;
+    console.log("TCL: userPass", userPass)
 })
