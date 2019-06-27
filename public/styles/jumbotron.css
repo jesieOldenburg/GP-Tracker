@@ -1,0 +1,22 @@
+.jumbotron {
+    background-image: url(../img/landing-banner.jpg);
+    background-size: cover;
+    height: 35em;
+    border-radius: 0%;
+}
+
+.display-4 {
+    color: white;
+}
+
+.lead {
+    color: azure;
+}
+
+.form-group {
+    width: 25em;
+}
+
+.input-labels {
+    color: antiquewhite;
+}

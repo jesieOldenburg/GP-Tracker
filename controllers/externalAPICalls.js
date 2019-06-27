@@ -1,9 +1,6 @@
-console.log('SR API CALL')
 var axios = require('axios');
 require('dotenv').config();
 let formatData = require('./formatExtData');
-
-
 
 function getDATA() {
     const F1_API_KEY = process.env.SPT_RADAR_API_KEY; // Get the API key for the SportsRadar Service..
