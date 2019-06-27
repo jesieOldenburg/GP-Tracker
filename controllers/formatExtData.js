@@ -18,7 +18,7 @@ function formatCompetitors(data) {
             COMP_ARRAY.push(Driver);
         }
     }
-    console.log("TCL: formatCompetitors -> COMP_ARRAY", COMP_ARRAY)
+    // console.log("TCL: formatCompetitors -> COMP_ARRAY", COMP_ARRAY)
     return COMP_ARRAY;
 }
 
