@@ -19,4 +19,11 @@ class SeasonResults {
     }
 }
 
+// TODO: Need to add Stages class to data...
+class Stages {
+    constructor(stage_id, venue_name, ) {
+        
+    }
+}
+
 module.exports = Competitor, SeasonResults;
